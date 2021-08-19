@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    
+} 
+  .ftco-navbar-light {
+    background: transparent !important;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 0;
+  }
+  .logo { 
+      width: 50px;
+      height: 30px;
+      background: transparent;
+  }
+  
+  .ftco-navbar-light .navbar-brand {
+    color: #c8a97e;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+  }
+  
+  .ftco-navbar-light .navbar-brand:hover,
+  .ftco-navbar-light .navbar-brand:focus {
+    color: #fff;
+  }
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  font-size: 14px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  color: #ffffff;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+  background: #c8a97e;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: #c8a97e;
+}
+
+.ftco-navbar-light.scrolled .nav-item.active > a {
+    color: #c8a97e !important;
+  }
+  
+  .ftco-navbar-light.scrolled .nav-item.cta > a {
+    color: #ffffff !important;
+    background: #c8a97e;
+    border: none !important;
+    border-radius: 0;
+  }
+  .ftco-navbar-light.scrolled .nav-item.cta > a span {
+    display: inline-block;
+    color: #ffffff !important;
+  }
+  
+  .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
+    border-color: #c8a97e;
+  }
+  
+   .nav-link {
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+    color: #000000 !important;
+  }
+  
+   .nav-link.active {
+    color: #c8a97e !important;
+  }
+  
+  .ftco-navbar-light.scrolled .navbar-brand {
+    color: #000000;
+  }
+  
+  .navbar-brand {
+    font-weight: 900;
+    font-size: 20px;
+  }  
+
+
+  /*--- slider --- */
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(41, 40, 40, 0.24));
+}
+.myslider {
+    height: 750px;
+    display: none; /*sauf la premiere qui est display block */
+    overflow: hidden;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.1s;
+    user-select: none;
+}
+.prev:hover, .next:hover {
+    color: #9b0511;
+
+}
+.next{
+    right: 0;
+}
+.dotsbox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    border-color: #9b0511;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0.8;}
+    to {opacity: 1;}
+}
+@keyframes fade {
+    from {opacity: 0.8;}
+    to {opacity: 1;}
+}
+.txt {
+    position: absolute;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 3s;
+    animation-name: posi;
+    animation-duration: 3s;
+    z-index: 1;
+}
+@-webkit-keyframes posi {
+    from {left: 25%;}
+    to {left: 15%;}
+}
+@keyframes posi {
+    from {left: 25%;}
+    to {left: 15%;}
+}
+.txt h2 {
+    color: #9b0511;
+    font-weight: bold;
+    margin: 20px;
+}
+.txt p {
+    font-weight: bold;
+    font-size: 20px;
+}
+img{
+    transform: scale(1.5, 1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 5s;
+    animation-name: zoomin;
+    animation-duration: 5s;
+}
+@-webkit-keyframes zoomin {
+    from {transform: scale(1, 1);}
+    to {transform: scale(1.5, 1.5);}
+}
+@keyframes zoomin {
+    from {transform: scale(1, 1);}
+    to {transform: scale(1.5, 1.5);}
+}
+@media screen and (max-width: 800px) {
+    .myslider {
+        height: 500px;
+    }
+    .txt {
+        line-height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: posi2;
+        -webkit-animation-duration: 2s;
+        animation-name: posi2;
+        animation-duration: 2s;
+    }
+    @keyframes posi2 {
+        from {top: 35%}
+        to {top: 50%}
+    }
+    .txt h2 {
+        font-size: 40px;
+    }
+    .txt p {
+        font-size: 13px;
+    }
+}
+
+/*--- services ----*/
+.body-menu {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/menu.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*--- contact ----*/
+.body-contact {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/b2.jpg);
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.title-contact {
+  margin-top: 150px;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #c8a97e;
+}
+.makereservation .form-group label {
+  font-weight: 600;
+  color: #000000;
+}
+
+.makereservation .form-group .icon {
+  position: absolute;
+  top: 80% !important;
+  right: 20px;
+  font-size: 14px;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.makereservation .form-group .select-wrap {
+  position: relative;
+}
+
+.makereservation .form-group .select-wrap select {
+  appearance: none;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0px 24px 48px -12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn.btn-primary {
+  background: #c8a97e;
+  border: 1px solid #c8a97e;
+  color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  background: transparent;
+  border: 1px solid #c8a97e;
+  color: #000000;
+}
+
+.btn.btn-primary.btn-outline-primary {
+  border: 1px solid #c8a97e;
+  background: transparent;
+  color: #c8a97e;
+}
+
+.btn.btn-primary.btn-outline-primary:hover {
+  border: 1px solid transparent;
+  background: #c8a97e;
+  color: #ffffff;
+}

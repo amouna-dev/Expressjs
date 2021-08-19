@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Cake App</title>
+</head>
+<body>
+ <header>   
+<!-- navigation starts -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        Cake App 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="./services.html" class="nav-link">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item cta">
+            <a href="#" class="nav-link">Order a cake</a>
+          </li>
+         
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- navigation ends -->
+</header>
+<!-- slider -->
+
+<div class="slider">
+    <div class="myslider fade" style="display: block;">
+        <div class="txt">
+            <h2>IMAGE 1</h2>
+            <p>Special Pastries <br> Let's Make Cake Happen </p>
+        </div>
+        <img src="./images/img1.jpg" alt="image1" width="100%" height="100%">
+    </div>
+    <div class="myslider fade" >
+        <div class="txt">
+            <h2>IMAGE 2</h2>
+            <p>Special Pastries <br> We Have Delicious cake  </p>
+        </div>
+        <img src="./images/img2.jpg" alt="image2" width="100%" height="100%">
+    </div>
+    <div class="myslider fade">
+        <div class="txt">
+            <h2>IMAGE 3</h2>
+            <p>Special Pastries <br> Choose your Cake </p>
+        </div>
+        <img src="./images/img3.jpg" alt="image3" width="100%" height="100%">
+    </div>
+    <div class="myslider fade">
+        <div class="txt">
+            <h2>IMAGE 4</h2>
+            <p>Special Pastries <br> Cake HandBake with Love </p>
+        </div>
+        <img src="./images/img4.jpg" alt="image4" width="100%" height="100%">
+    </div>
+    <div class="myslider fade">
+        <div class="txt">
+            <h2>IMAGE 5</h2>
+            <p>Special Pastries <br> The perfect Gift for any Celebration </p>
+        </div>
+        <img src="./images/img5.jpg" alt="image5" width="100%" height="100%">
+    </div>
+    <div class="myslider fade">
+        <div class="txt">
+            <h2>IMAGE 6</h2>
+            <p>Special Pastries <br> Order your Favorite Cake </p>
+        </div>
+        <img src="./images/img6.jpg" alt="image6" width="100%" height="100%">
+    </div>
+    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlide(1)">&#10095;</a>
+
+    <div class="dotsbox" style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
